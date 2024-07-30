@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampson Anaba Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a552ea376.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" 
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "crDr9LetFoKtVD0e1",
+            });
+        })();
+    </script>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo"><span>Sampson</span></a>
+        <ul class="navigate">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </ul>
+        
+        <i class="fa-solid fa-bars" id="menubar"></i>
+
+        <a href="#contact" class="button">Contact Me</a>
+    </nav>
+
+    <section id="home">
+        <img src="images/Me, Indiana.jpg" alt="A photo of me">
+
+        <div class="my-info">
+            <h1><span>Hey, I'm Sampson</span></h1>
+            <h3><span>Full-stack Engineer</span> based in West Virginia</h3>
+            <p>
+                I'm a sophomore at Bluefield State University, majoring in computer science
+                with a focus on software engineering. Passionate about solving real-world
+                problems, I've developed projects like an emergency report app, a quiz app,
+                and a car rental website. I love both frontend and backend development, and
+                enjoy working in teams. Outside of tech, I play soccer, fish, and game. 
+                Welcome to my portfolio!
+            </p>
+        </div>
+
+        <div class="button-box">
+            <div class="button" onclick="showMoreAboutMe()">More About Me</div>
+            <a href="#contact" class="button">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="my-about">
+            <div class="about-info">
+                <h1><span>About Me</span></h1>
+                <p>
+                    As a full-stack engineer, I build digital experiences from the ground up, 
+                    using my skills and tools to create seamless and beautiful products. 
+                    Like a builder, I turn ideas into functional and lasting realities,
+                    ensuring users enjoy every interaction.
+                </p>
+            </div>
+
+            <h2><span>Skills</span></h2>
+
+            <div class="skills">
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-chevron-right"></i> HTML</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-chevron-right"></i> CSS</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-chevron-right"></i> JavaScript</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-chevron-right"></i> Java</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-chevron-right"></i> Python</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img src="images/me.jpg" alt="My skills">
+    </section>
+
+    <section id="projects">
+        <h1 class="header"><span>Projects</span></h1>
+
+        <div class="projects-container">
+
+            <div class="box">
+                <h1><span>Emergency Doctor</span></h1>
+                <p>
+                    An app designed to help individuals report injuries and symptoms,
+                    providing doctors with detailed information to improve healthcare outcomes.
+                </p>
+                <img src="images/xray.jpg" alt="Emergency Doctor project">
+            </div>
+
+            <div class="box">
+                <h1><span>Quizzes</span></h1>
+                <p>
+                    A versatile quiz app designed to aid teachers and students, featuring easy
+                    grading, score tracking, and performance analysis tools.
+                </p>
+                <img src="images/Quiz-bg.png" alt="Quizzes project" class="circular-img">
+            </div>
+
+            <div class="box">
+                <h1><span>Own It</span></h1>
+                <p>
+                    A user-friendly car rental website developed to offer seamless and efficient
+                    car rental services for users, driven by my passion for cars.
+                </p>
+                <img src="images/car1.jpg" alt="Own It project">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+
+        <h1 class="header"><span>Contact</span></h1>
+
+        <form id="contact-form">
+            <div class="input-box">
+                <span>Full Name</span>
+                <input type="text" id="name" placeholder="Enter Your Full Name" required>
+            </div>
+
+            <div class="input-box">
+                <span>Email</span>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+
+            <div class="input-box">
+                <span>Message</span>
+                <input type="text" id="message" placeholder="Enter Your Full Message" required>
+            </div>
+
+            <button type="submit" class="button" onclick="sendMail()">Submit</button>
+        </form>
+
+        <div id="notification" style="display: none;">Your message has been sent!</div>
+    </section>
+
+    <footer>
+        <div class="col-left">
+            <div class="col-box">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>219 Rock St Bluefield,
+                    WV 24701</span>
+            </div>
+
+            <div class="col-box">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span>+1 (304) 320 2604</span>
+            </div>
+
+            <div class="col-box">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>sampsonanaba4@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="col-right">
+            <span>About My Projects</span>
+            <p>
+                My projects aim to blend innovation and practicality, solving real-world
+                issues while providing seamless user experiences. Each project is crafted
+                with a focus on efficiency, usability, and enhancing everyday life through
+                technology. Whether it's an app, a website, or a tool, my goal is to make a meaningful impact.
+            </p>
+
+            <div class="social-icons">
+                <span>
+                    <a href="https://www.linkedin.com/in/sampson-anaba/" title="My LinkedIn profile"><img id="LinkedInLogo" src="logos\LinkedIn-Logos\LinkedIn-Logos\LI-In-Bug.png"/></a>
+                </span>
+
+                <span>
+                    <a href="https://github.com/Yine-Eng" title="My GitHub profile"><img id="GitHubLogo" src="logos\github-logo\github-mark\github-mark-white.png"/></a>
+                </span>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- More About Me Section -->
+    <section id="more-about-me" style="display: none;">
+        <div class="more-about-container">
+            <div class="more-about-content">
+                <h1>About Me</h1>
+                <p>Hello! My name is Sampson, and I am from the vibrant country of Ghana, West Africa. I am currently a sophomore at Bluefield State University, pursuing a degree in computer science with a concentration in software engineering.</p>
+                <h2>Education and Achievements:</h2>
+                <p>At Bluefield State University, I have taken several relevant courses, including Object Oriented Programming with Java, Web Programming, Linux, Introduction to Cybersecurity, Calculus, and Discrete Mathematics. My dedication to my studies has earned me the honor of being named a presidential scholar for all the semesters I've spent at Bluefield. Additionally, I have the privilege of serving as the Vice President of the International Student Organization (ISO) and am an active member of the computer society. My hard work and commitment have also led me to be a Project Success Ascendium intern twice, an honors scholar, a participant in DevCon24, and a proud member of CodePath and ColorStack.</p>
+                <h2>Skills and Technologies:</h2>
+                <p>I am proficient in Java, Python, HTML, CSS, JavaScript, and Linux. Recently, I have also started learning Figma to enhance my design skills. My diverse skill set allows me to work on various projects, combining both frontend and backend development.</p>
+                <h2>Professional Experience:</h2>
+                <p>I have gained valuable experience through internships at my school, where I worked with Chris Shrader, a networking expert. During these internships, I educated staff about cyber threats, fixed network switches and WiFi in school buildings, and helped resolve any computer issues on campus. I also work as an IT Technician on campus during school days, performing similar tasks.</p>
+                <h2>Projects:</h2>
+                <p><b>Emergency Report App:</b> This app allows individuals to report injuries and symptoms, providing doctors with valuable information to improve healthcare. It is inspired by the idea that we are the best observers of our bodies and can provide crucial details to medical professionals.</p>
+                <p><b>Own It Car Rental Website:</b> Driven by my passion for cars, I created this website to offer a user-friendly car rental service that improves people's lives.</p>
+                <p><b>User-Friendly Quiz App:</b> This app aims to assist teachers and students by making grading easier and providing features like score tracking and academic performance analysis.</p>
+                <h2>Goals and Aspirations:</h2>
+                <p>My career goal is to become a fullstack engineer. I want to be a part of both the frontend and backend of projects, continuously learning and growing to excel in what I do. I aim to create solutions that bring smiles to people's faces by addressing real-world problems through technology.</p>
+                <h2>Personal Interests:</h2>
+                <p>Outside of technology, I enjoy playing soccer, a sport that keeps me energetic and engaged. When I seek relaxation, I go fishing, enjoying the tranquility it offers. I also love playing soccer video games, combining my passion for the sport with my interest in gaming.</p>
+                <p>I am enthusiastic about working in groups and planning projects with friends, always eager to collaborate and bring innovative ideas to life. Thank you for visiting my portfolio, and I look forward to connecting with you!</p>
+                <div class="button" onclick="hideMoreAboutMe()">Close</div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
