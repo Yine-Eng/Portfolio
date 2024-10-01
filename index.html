@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sampson Anaba Portfolio</title>
+    <title>Sampson Anaba | Full-stack Developer | Software Engineering Projects</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1a552ea376.js" crossorigin="anonymous"></script>
     <script type="text/javascript" 
@@ -18,7 +18,6 @@
     </script>
 </head>
 <body>
-
     <nav>
         <a href="#" class="logo"><span>Sampson</span></a>
         <ul class="navigate">
@@ -27,25 +26,27 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </ul>
+
+        <!-- Original theme button for larger screens -->
+        <button id="theme-toggle" class="theme-button">
+            <img id="themePicture" src="images/sun.png">
+        </button>
         
         <i class="fa-solid fa-bars" id="menubar"></i>
-
-        <a href="#contact" class="button">Contact Me</a>
     </nav>
 
     <section id="home">
-        <img src="images/Me, Indiana.jpg" alt="A photo of me">
+        <img src="images/Me, Indiana.jpg" alt="A photo of me"/>
 
         <div class="my-info">
             <h1><span>Hey, I'm Sampson</span></h1>
             <h3><span>Full-stack Engineer</span> based in West Virginia</h3>
             <p>
-                I'm a sophomore at Bluefield State University, majoring in computer science
-                with a focus on software engineering. Passionate about solving real-world
-                problems, I've developed projects like an emergency report app, a quiz app,
-                and a car rental website. I love both frontend and backend development, and
-                enjoy working in teams. Outside of tech, I play soccer, fish, and game. 
-                Welcome to my portfolio!
+                I'm a sophomore at Bluefield State University, majoring in computer science with a concentration in Software Engineering. 
+                I have a strong foundation in object-oriented programming, web development, Linux, and cybersecurity. 
+                I've developed dynamic projects like an emergency response app with real-time geolocation, 
+                a car rental platform using Google APIs, and a responsive tour booking platform. Outside of tech, 
+                I enjoy playing soccer, video games, and fishing. Welcome to my portfolio!
             </p>
         </div>
 
@@ -59,12 +60,15 @@
         <div class="my-about">
             <div class="about-info">
                 <h1><span>About Me</span></h1>
+
                 <p>
-                    As a full-stack engineer, I build digital experiences from the ground up, 
-                    using my skills and tools to create seamless and beautiful products. 
-                    Like a builder, I turn ideas into functional and lasting realities,
-                    ensuring users enjoy every interaction.
+                    As a full-stack engineer, I build applications with a focus on usability, performance, and
+                    functionality. I have experience in Java, Python, JavaScript, HTML, CSS, Git, and Linux. 
+                    My education at Bluefield State University has given me strong programming fundamentals, 
+                    along with skills in version control, API integration, and frameworks like Express.js. 
+                    I also work with Figma for UI/UX design and Linux for system management.
                 </p>
+
             </div>
 
             <h2><span>Skills</span></h2>
@@ -72,11 +76,11 @@
             <div class="skills">
                 <ul>
                     <li>
-                        <span><i class="fa-solid fa-chevron-right"></i> HTML</span>
+                        <span><i class="fa-solid fa-chevron-right"></i> Java</span>
                     </li>
 
                     <li>
-                        <span><i class="fa-solid fa-chevron-right"></i> CSS</span>
+                        <span><i class="fa-solid fa-chevron-right"></i> Python</span>
                     </li>
 
                     <li>
@@ -86,16 +90,16 @@
 
                 <ul>
                     <li>
-                        <span><i class="fa-solid fa-chevron-right"></i> Java</span>
+                        <span><i class="fa-solid fa-chevron-right"></i> HTML</span>
                     </li>
 
                     <li>
-                        <span><i class="fa-solid fa-chevron-right"></i> Python</span>
+                        <span><i class="fa-solid fa-chevron-right"></i> CSS</span>
                     </li>
                 </ul>
             </div>
         </div>
-        <img src="images/me.jpg" alt="My skills">
+        <img src="images/me.jpg" alt="A photo of me in Indianapolis">
     </section>
 
     <section id="projects">
@@ -104,55 +108,68 @@
         <div class="projects-container">
 
             <div class="box">
-                <h1><span>Emergency Doctor</span></h1>
-                <p>
-                    An app designed to help individuals report injuries and symptoms,
-                    providing doctors with detailed information to improve healthcare outcomes.
-                </p>
-                <img src="images/xray.jpg" alt="Emergency Doctor project">
+                <a href="https://github.com/Yine-Eng/Emergency-Doctor" target="_blank">
+                    <h1><span>Emergency Doctor</span></h1>
+                    <p>
+                        I built this app to help people quickly connect with emergency services in times of emergencies. It uses real-time location tracking 
+                        and lets users easily report injuries by selecting body parts. The goal? Speed up response times and provide 
+                        useful details to doctors!
+                    </p>
+                    <img src="images/Emergency-Doc..png" alt="Image illustrating the Emergency Doctor app">
+                </a>
             </div>
 
             <div class="box">
-                <h1><span>Quizzes</span></h1>
-                <p>
-                    A versatile quiz app designed to aid teachers and students, featuring easy
-                    grading, score tracking, and performance analysis tools.
-                </p>
-                <img src="images/Quiz-bg.png" alt="Quizzes project" class="circular-img">
+                <a href="https://github.com/Yine-Eng/Eazi-Tour" target="_blank">
+                    <h1><span>Eazi Tour</span></h1>
+                    <p>
+                        Eazi Tour is perfect for spontaneous travelers. It pulls in beautiful images and tourist info from around the world. 
+                        Just pick a continent, and let the platform do the work. Your next adventure is just a click away!
+                    </p>
+                    <img src="images/Tourist.png" alt="Image illustration of a tourist">
+                </a>
             </div>
 
             <div class="box">
-                <h1><span>Own It</span></h1>
-                <p>
-                    A user-friendly car rental website developed to offer seamless and efficient
-                    car rental services for users, driven by my passion for cars.
-                </p>
-                <img src="images/car1.jpg" alt="Own It project">
+                <a href="https://github.com/Yine-Eng/Own-It" target="_blank">
+                    <h1><span>Own It</span></h1>
+                    <p>
+                        Love cars? So do I! This car rental website lets you pick your ride, location, and dates seamlessly. Plus, 
+                        real-time location suggestions make booking fast and easy. No more guesswork!
+                    </p>
+                    <img src="images/Car.png" alt="Car rental interface from the Own It project">
+                </a>
             </div>
+
         </div>
     </section>
 
     <section id="contact">
-
         <h1 class="header"><span>Contact</span></h1>
 
         <form id="contact-form">
             <div class="input-box">
                 <span>Full Name</span>
-                <input type="text" id="name" placeholder="Enter Your Full Name" required>
+                <input type="text" id="name" placeholder="Enter Your Full Name" required
+                oninvalid="this.setCustomValidity('Please enter your full name')"
+                oninput="this.setCustomValidity('')"/>
             </div>
 
             <div class="input-box">
                 <span>Email</span>
-                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <input type="email" id="email" placeholder="Enter Your Email" required
+                oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                oninput="this.setCustomValidity('')"/>
             </div>
 
             <div class="input-box">
                 <span>Message</span>
-                <input type="text" id="message" placeholder="Enter Your Full Message" required>
+                <input type="text" id="message" placeholder="Enter Your Message" required
+                oninvalid="this.setCustomValidity('Please enter your message')"
+                oninput="this.setCustomValidity('')">
             </div>
 
-            <button type="submit" class="button" onclick="sendMail()">Submit</button>
+            <button type="submit" class="button">Submit</button>
         </form>
 
         <div id="notification" style="display: none;">Your message has been sent!</div>
@@ -188,11 +205,11 @@
 
             <div class="social-icons">
                 <span>
-                    <a href="https://www.linkedin.com/in/sampson-anaba/" title="My LinkedIn profile"><img id="LinkedInLogo" src="logos\LinkedIn-Logos\LinkedIn-Logos\LI-In-Bug.png"/></a>
+                    <a href="https://www.linkedin.com/in/sampson-anaba/" target="_blank" title="My LinkedIn profile"><img id="LinkedInLogo" src="logos\LinkedIn-Logos\LinkedIn-Logos\LI-In-Bug.png"/></a>
                 </span>
 
                 <span>
-                    <a href="https://github.com/Yine-Eng" title="My GitHub profile"><img id="GitHubLogo" src="logos\github-logo\github-mark\github-mark-white.png"/></a>
+                    <a href="https://github.com/Yine-Eng" target="_blank" title="My GitHub profile"><img id="GitHubLogo" src="logos\github-logo\github-mark\github-mark-white.png"/></a>
                 </span>
                 
             </div>
@@ -204,22 +221,49 @@
         <div class="more-about-container">
             <div class="more-about-content">
                 <h1>About Me</h1>
-                <p>Hello! My name is Sampson, and I am from the vibrant country of Ghana, West Africa. I am currently a sophomore at Bluefield State University, pursuing a degree in computer science with a concentration in software engineering.</p>
+                <p>
+                    Hi, I’m Sampson, and I come from the beautiful country of Ghana in West Africa. I’m currently a sophomore at Bluefield State University, where I’m majoring in computer science with a concentration in software engineering. My journey into technology has been filled with curiosity and a passion for creating tools that make life better for others.
+                </p>
+                
                 <h2>Education and Achievements:</h2>
-                <p>At Bluefield State University, I have taken several relevant courses, including Object Oriented Programming with Java, Web Programming, Linux, Introduction to Cybersecurity, Calculus, and Discrete Mathematics. My dedication to my studies has earned me the honor of being named a presidential scholar for all the semesters I've spent at Bluefield. Additionally, I have the privilege of serving as the Vice President of the International Student Organization (ISO) and am an active member of the computer society. My hard work and commitment have also led me to be a Project Success Ascendium intern twice, an honors scholar, a participant in DevCon24, and a proud member of CodePath and ColorStack.</p>
+                <p>
+                    At Bluefield State, I’ve been fortunate enough to maintain a 4.0 GPA, earning me the honor of being a presidential scholar every semester. I’ve taken courses like Object-Oriented Programming with Java, Web Programming, Linux, Cybersecurity, Calculus, and Discrete Mathematics, which have helped me develop a strong foundation in both frontend and backend development. 
+                </p>
+                <p>
+                    Beyond the classroom, I’ve been actively involved in campus life as the Vice President of the International Student Organization, where I’ve had the chance to foster connections between students from all over the world. Additionally, I’ve had the opportunity to intern twice as part of the Project Success program, contributing to various technology initiatives at my university.
+                </p>
+                
                 <h2>Skills and Technologies:</h2>
-                <p>I am proficient in Java, Python, HTML, CSS, JavaScript, and Linux. Recently, I have also started learning Figma to enhance my design skills. My diverse skill set allows me to work on various projects, combining both frontend and backend development.</p>
+                <p>
+                    I have hands-on experience in Java, Python, HTML, CSS, JavaScript, and Linux, and I’ve recently added Figma to my toolkit for UI/UX design. I’m driven by a desire to solve real-world problems, and I enjoy projects that challenge me to integrate APIs and create seamless user experiences. I’m particularly skilled at bridging the gap between users and technology by making complex systems intuitive and easy to use.
+                </p>
+                
                 <h2>Professional Experience:</h2>
-                <p>I have gained valuable experience through internships at my school, where I worked with Chris Shrader, a networking expert. During these internships, I educated staff about cyber threats, fixed network switches and WiFi in school buildings, and helped resolve any computer issues on campus. I also work as an IT Technician on campus during school days, performing similar tasks.</p>
+                <p>
+                    As an IT Technician on campus, I’ve managed network infrastructure, repaired devices, and strengthened cybersecurity for over 2,000 users, reducing hardware and software issues significantly. I also had the privilege of working closely with my school’s networking expert, Chris Shrader, where I learned firsthand about the importance of maintaining secure, reliable systems.
+                </p>
+    
                 <h2>Projects:</h2>
-                <p><b>Emergency Report App:</b> This app allows individuals to report injuries and symptoms, providing doctors with valuable information to improve healthcare. It is inspired by the idea that we are the best observers of our bodies and can provide crucial details to medical professionals.</p>
-                <p><b>Own It Car Rental Website:</b> Driven by my passion for cars, I created this website to offer a user-friendly car rental service that improves people's lives.</p>
-                <p><b>User-Friendly Quiz App:</b> This app aims to assist teachers and students by making grading easier and providing features like score tracking and academic performance analysis.</p>
+                <p><b>Emergency Report App:</b> Inspired by the belief that we are the best observers of our bodies, I created this app to help individuals report injuries and symptoms accurately to medical professionals. It uses a real-time location feature and an interactive body diagram to provide doctors with valuable information, improving healthcare response times and outcomes.</p>
+
+                <p><b>Eazi Tour:</b> This project is for spontaneous travelers who want to explore destinations without prior planning. The platform fetches beautiful images and tourist information from around the world through APIs. Users can select a continent and be inspired for their next adventure.</p>
+                
+                <p><b>Own It Car Rental Website:</b> My love for cars motivated me to build this dynamic platform, which allows users to book rentals seamlessly by choosing locations, dates, and vehicles. It integrates with Google Places and provides real-time location suggestions, ensuring a smooth and satisfying user experience.</p>
+                
                 <h2>Goals and Aspirations:</h2>
-                <p>My career goal is to become a fullstack engineer. I want to be a part of both the frontend and backend of projects, continuously learning and growing to excel in what I do. I aim to create solutions that bring smiles to people's faces by addressing real-world problems through technology.</p>
+                <p>
+                    My goal is to become a full-stack engineer, creating applications that bridge the gap between people and technology. I’m passionate about projects that solve real-world problems and improve everyday life. Whether I’m developing an emergency app or a travel platform, my focus is always on delivering practical solutions that bring smiles to users’ faces.
+                </p>
+    
                 <h2>Personal Interests:</h2>
-                <p>Outside of technology, I enjoy playing soccer, a sport that keeps me energetic and engaged. When I seek relaxation, I go fishing, enjoying the tranquility it offers. I also love playing soccer video games, combining my passion for the sport with my interest in gaming.</p>
-                <p>I am enthusiastic about working in groups and planning projects with friends, always eager to collaborate and bring innovative ideas to life. Thank you for visiting my portfolio, and I look forward to connecting with you!</p>
+                <p>
+                    Outside of my love for technology, soccer is my favorite way to stay active and energized. When I need to unwind, I head out to fish, where I find peace and focus. I also enjoy cooking, particularly experimenting with new recipes, and playing soccer video games as a way to relax and connect with friends.
+                </p>
+                
+                <p>
+                    Collaboration is at the heart of everything I do. I love working with others to brainstorm, plan, and execute innovative ideas. I believe that technology is a powerful tool for change, and I’m excited about what the future holds. Thank you for visiting my portfolio, and I look forward to connecting with you!
+                </p>
+    
                 <div class="button" onclick="hideMoreAboutMe()">Close</div>
             </div>
         </div>
